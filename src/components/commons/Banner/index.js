@@ -36,7 +36,7 @@ export default function Banner() {
       <Text
         tag="p"
         textAlign="Center"
-        variant="regularText"
+        variant="subtitle"
       >
         Portfolio
       </Text>

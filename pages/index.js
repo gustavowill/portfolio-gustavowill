@@ -1,6 +1,7 @@
 import React from 'react';
 import Box from '../src/components/foundation/layout/Box';
 import Banner from '../src/components/commons/Banner';
+import Header from '../src/components/commons/Header';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       flexWrap="nowrap"
     >
       <Banner />
+      <Header />
     </Box>
   );
 }

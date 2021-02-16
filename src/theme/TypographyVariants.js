@@ -1,13 +1,18 @@
 const typographyVariants = {
   title: {
     fontSize: '50px',
-    fontWeight: '700px',
-    fontHeight: 1.25,
+    fontWeight: '700',
+    lineHeight: 1.25,
   },
   subtitle: {
+    fontSize: '40px',
+    fontWeight: '400',
+    lineHeight: 1,
+  },
+  standardText: {
     fontSize: '30px',
-    fontWeight: '400px',
-    fontHeight: 1,
+    fontWeight: '400',
+    lineHeight: 1,
   },
 };
 

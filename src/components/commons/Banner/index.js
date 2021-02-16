@@ -20,7 +20,7 @@ export default function Banner() {
       display="flex"
       flexDirection="column"
       justifyContent="center"
-      flex="0 0 90vh"
+      flex="0 0 94vh"
       flexWrap="nowrap"
       backgroundImage="url(https://placehold.it/400x400)"
       backgroundPosition="center"

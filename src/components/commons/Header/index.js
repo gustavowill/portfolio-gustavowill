@@ -39,7 +39,7 @@ export default function Header() {
       <Logo />
       <Hearderwrapper.NavBar>
         {links.map((link) => (
-          <Text key={link.text} variant="standardText" tag="a" href={link.url}>
+          <Text key={link.text} variant="navLinkText" tag="a" href={link.url}>
             {link.text}
           </Text>
         ))}

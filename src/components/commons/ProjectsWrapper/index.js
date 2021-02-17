@@ -1,6 +1,24 @@
+import React from 'react';
 import styled from 'styled-components';
+import Text from '../../foundation/Text';
+import Grid from '../../foundation/layout/Grid';
 
-const ProjectWrapper = styled.section`
+const projects = [
+  {
+    name: 'Project1',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.',
+  },
+  {
+    name: 'Project2',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.',
+  },
+  {
+    name: 'Project3',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.',
+  },
+];
+
+const ProjectsWrapper = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -10,23 +28,67 @@ const ProjectWrapper = styled.section`
   };
 `;
 
-ProjectWrapper.Card = styled.div`
+ProjectsWrapper.Card = styled.div`
   padding: 1%;
   border: green solid 2px;
-  margin: 0 1%;
-`;
+ `;
 
-ProjectWrapper.CardEmphasis = styled.div`
+ProjectsWrapper.CardEmphasis = styled.div`
   padding: 1%;
   border: green solid 2px;
   display: flex;
   align-items: center;
-  img{
-    margin-right: 2%;
+  img {
+    margin-right: 15px;
+    max-width: 50%;
+  }
+  p {
+    text-align: left;
   }
 `;
 
-ProjectWrapper.CardImage = styled.img`
+ProjectsWrapper.CardImage = styled.img`
+  max-width: 100%;
 `;
 
-export default ProjectWrapper;
+export default function Project() {
+  return (
+    <ProjectsWrapper>
+      <Text tag="h2" variant="projectTitle">Meus Projetos</Text>
+      <Grid>
+        <Grid.Row>
+          {projects.map((project) => (
+            <Grid.Column
+              value={4}
+              key={project.name}
+            >
+              <ProjectsWrapper.Card>
+                <ProjectsWrapper.CardImage src="https://placehold.it/400x500" />
+                <Text tag="h3" variant="cardTitle">
+                  {project.name}
+                </Text>
+              </ProjectsWrapper.Card>
+            </Grid.Column>
+          ))}
+        </Grid.Row>
+        <Grid.Row
+          margin="32px 0"
+        >
+          <Grid.Column>
+            <ProjectsWrapper.CardEmphasis>
+              <ProjectsWrapper.CardImage src="https://placehold.it/600x400" />
+              <div>
+                <Text tag="h3" variant="cardTitle">
+                  {projects[0].name}
+                </Text>
+                <Text tag="p" variant="cardText">
+                  {projects[0].text}
+                </Text>
+              </div>
+            </ProjectsWrapper.CardEmphasis>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
+    </ProjectsWrapper>
+  );
+}

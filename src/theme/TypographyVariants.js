@@ -24,20 +24,20 @@ const typographyVariants = {
     fontWeight: '400',
     lineHeight: '21.6px',
   },
-  projecTitle: {
-    fontSize: '28px',
+  projectTitle: {
+    fontSize: '60px',
     fontWeight: '400',
-    lineHeight: '33.6px',
+    lineHeight: '72px',
   },
-  projecTitleSx: {
+  projectTitleSx: {
     fontSize: '36px',
     fontWeight: '400',
     lineHeight: '43.2px',
   },
   cardTitle: {
-    fontSize: '28px',
-    fontWeight: '400',
-    lineHeight: '33.6px',
+    fontSize: '32px',
+    fontWeight: '700',
+    lineHeight: '38.4px',
   },
   cardTitleSx: {
     fontSize: '24px',
@@ -45,9 +45,9 @@ const typographyVariants = {
     lineHeight: '28.8px',
   },
   cardText: {
-    fontSize: '32px',
-    fontWeight: '700',
-    lineHeight: '38.4px',
+    fontSize: '18px',
+    fontWeight: '400',
+    lineHeight: '21.6px',
   },
 };
 

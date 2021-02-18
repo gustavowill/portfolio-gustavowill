@@ -38,7 +38,7 @@ export default function Banner() {
         textAlign="Center"
         variant="subtitle"
       >
-        Portfolio
+        Portfólio
       </Text>
     </BannerBackground>
   );

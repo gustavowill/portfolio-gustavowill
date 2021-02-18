@@ -1,7 +1,23 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Logo from '../Logo';
 import Text from '../../foundation/Text';
+import breakpointsMedia from '../../../theme/utils/breakpointsMedia';
+
+const headerBreakpoints = {
+  sm: css`
+    max-width: 576px;
+  `,
+  md: css`
+    max-width: 768px;
+  `,
+  lg: css`
+    max-width: 1160px;
+  `,
+  xl: css`
+    max-width: 1222px;
+  `,
+};
 
 const links = [
   {
@@ -14,14 +30,20 @@ const links = [
   },
 ];
 
-const Hearderwrapper = styled.nav`
-  display: flex;
-  justify-content: space-evenly;
+const HeaderBar = styled.div`
+  width: 100%;
   border-top: green solid 2px;
   background-color: lightgreen;
 `;
 
-Hearderwrapper.NavBar = styled.div`
+HeaderBar.Wrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  ${breakpointsMedia(headerBreakpoints)}
+`;
+
+HeaderBar.Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,15 +57,17 @@ Hearderwrapper.NavBar = styled.div`
 
 export default function Header() {
   return (
-    <Hearderwrapper>
-      <Logo />
-      <Hearderwrapper.NavBar>
-        {links.map((link) => (
-          <Text key={link.text} variant="navLinkText" tag="a" href={link.url}>
-            {link.text}
-          </Text>
-        ))}
-      </Hearderwrapper.NavBar>
-    </Hearderwrapper>
+    <HeaderBar>
+      <HeaderBar.Wrapper>
+        <Logo />
+        <HeaderBar.Nav>
+          {links.map((link) => (
+            <Text key={link.text} variant="navLinkText" tag="a" href={link.url}>
+              {link.text}
+            </Text>
+          ))}
+        </HeaderBar.Nav>
+      </HeaderBar.Wrapper>
+    </HeaderBar>
   );
 }

@@ -27,7 +27,7 @@ export default function Footer() {
     <FooterWrapper>
       <FooterWrapper.LinksBar>
         <FooterWrapper.Icon href="https://github.com/gustavowill"><img src="/images/icon/github.svg" alt="github icon" /></FooterWrapper.Icon>
-        <FooterWrapper.Icon href="https://twitter.com/"><img src="/images/icon/twitter.svg" alt="twitter icon" /></FooterWrapper.Icon>
+        <FooterWrapper.Icon href="https://twitter.com/guswillemann"><img src="/images/icon/twitter.svg" alt="twitter icon" /></FooterWrapper.Icon>
       </FooterWrapper.LinksBar>
     </FooterWrapper>
   );

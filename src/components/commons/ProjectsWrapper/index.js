@@ -16,6 +16,11 @@ const projects = [
     name: 'Project3',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.',
   },
+  {
+    name: 'ProjectEmphasis',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.',
+    type: 'emphasis',
+  },
 ];
 
 const ProjectsWrapper = styled.section`
@@ -30,7 +35,9 @@ const ProjectsWrapper = styled.section`
 
 ProjectsWrapper.Card = styled.div`
   padding: 1%;
-  border: green dashed 2px;
+  border: 2px green dashed;
+  border-right-style: solid;
+  border-bottom-style: solid;
   transition: 500ms;
   :hover, :focus {
     box-shadow: 5px 5px green;
@@ -44,8 +51,12 @@ ProjectsWrapper.CardEmphasis = styled.div`
   display: flex;
   align-items: center;
   transition: 500ms;
+  border: 2px green dashed;
+  border-right-style: solid;
+  border-bottom-style: solid;
   :hover, :focus {
     box-shadow: 5px 5px green;
+    border-style: solid;
   }
   img {
     margin-right: 15px;
@@ -66,36 +77,39 @@ export default function Project() {
       <Text tag="h2" variant="projectTitle">Meus Projetos</Text>
       <Grid>
         <Grid.Row>
-          {projects.map((project) => (
-            <Grid.Column
-              value={4}
-              key={project.name}
-            >
-              <ProjectsWrapper.Card>
-                <ProjectsWrapper.CardImage src="https://placehold.it/400x500" />
-                <Text tag="h3" variant="cardTitle">
-                  {project.name}
-                </Text>
-              </ProjectsWrapper.Card>
-            </Grid.Column>
-          ))}
-        </Grid.Row>
-        <Grid.Row
-          margin="32px 0"
-        >
           <Grid.Column>
             <ProjectsWrapper.CardEmphasis>
               <ProjectsWrapper.CardImage src="https://placehold.it/600x400" />
               <div>
                 <Text tag="h3" variant="cardTitle">
-                  {projects[0].name}
+                  {projects[3].name}
                 </Text>
                 <Text tag="p" variant="cardText">
-                  {projects[0].text}
+                  {projects[3].text}
                 </Text>
               </div>
             </ProjectsWrapper.CardEmphasis>
           </Grid.Column>
+        </Grid.Row>
+        <Grid.Row
+          margin="32px 0"
+        >
+          {projects.map((project) => {
+            if (project.type === 'emphasis') return undefined;
+            return (
+              <Grid.Column
+                value={4}
+                key={project.name}
+              >
+                <ProjectsWrapper.Card>
+                  <ProjectsWrapper.CardImage src="https://placehold.it/400x500" />
+                  <Text tag="h3" variant="cardTitle">
+                    {project.name}
+                  </Text>
+                </ProjectsWrapper.Card>
+              </Grid.Column>
+            );
+          })}
         </Grid.Row>
       </Grid>
     </ProjectsWrapper>

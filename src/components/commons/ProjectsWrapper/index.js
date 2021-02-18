@@ -30,7 +30,12 @@ const ProjectsWrapper = styled.section`
 
 ProjectsWrapper.Card = styled.div`
   padding: 1%;
-  border: green solid 2px;
+  border: green dashed 2px;
+  transition: 500ms;
+  :hover, :focus {
+    box-shadow: 5px 5px green;
+    border-style: solid;
+  }
  `;
 
 ProjectsWrapper.CardEmphasis = styled.div`
@@ -38,6 +43,10 @@ ProjectsWrapper.CardEmphasis = styled.div`
   border: green solid 2px;
   display: flex;
   align-items: center;
+  transition: 500ms;
+  :hover, :focus {
+    box-shadow: 5px 5px green;
+  }
   img {
     margin-right: 15px;
     max-width: 50%;

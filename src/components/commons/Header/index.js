@@ -52,6 +52,9 @@ HeaderBar.Nav = styled.nav`
     color: green;
     text-decoration: none;
     margin: 0 5%;
+    :hover, :focus {
+      color: #CCFFCC;
+    }
   }
 `;
 

@@ -9,19 +9,26 @@ const FooterWrapper = styled.section`
   border-bottom: green solid 0.4vh;
 `;
 
-FooterWrapper.Icon = styled.a`
-  margin: 0 0.1vh;
+FooterWrapper.LinksBar = styled.div`
   background-color: green;
-  img {
-  vertical-align: middle;
-  }
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 132px;
+  margin-bottom: -0.4vh;
+`;
+
+FooterWrapper.Icon = styled.a`
+  margin: auto 16px;
 `;
 
 export default function Footer() {
   return (
     <FooterWrapper>
-      <FooterWrapper.Icon href="https://github.com/gustavowill"><img src="https://placehold.it/80x80" alt="icon2" /></FooterWrapper.Icon>
-      <FooterWrapper.Icon href="https://twitter.com/"><img src="https://placehold.it/80x80" alt="icon1" /></FooterWrapper.Icon>
+      <FooterWrapper.LinksBar>
+        <FooterWrapper.Icon href="https://github.com/gustavowill"><img src="/images/icon/github.svg" alt="github icon" /></FooterWrapper.Icon>
+        <FooterWrapper.Icon href="https://twitter.com/"><img src="/images/icon/twitter.svg" alt="twitter icon" /></FooterWrapper.Icon>
+      </FooterWrapper.LinksBar>
     </FooterWrapper>
   );
 }

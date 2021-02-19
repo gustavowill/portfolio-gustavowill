@@ -6,6 +6,7 @@ import theme from '../../../theme';
 
 const TextBase = styled.span`
   ${propToStyle('textAlign')}
+  ${propToStyle('display')}
   ${(props) => theme.typographyVariants[props.variant]};
 `;
 

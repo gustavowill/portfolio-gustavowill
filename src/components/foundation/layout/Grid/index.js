@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components';
 import breakpointsMedia from '../../../../theme/utils/breakpointsMedia';
-import propToStyle from '../../../../theme/utils/propToStyle';
 
 function applyColumnValue() {
   return ({ value }) => {
@@ -79,7 +78,6 @@ const Grid = styled.div`
 Grid.Row = styled.div`
   flex-wrap: wrap;
   display: flex;
-  ${propToStyle('margin')}
   margin-left: -16px;
   margin-right: -16px;
 `;

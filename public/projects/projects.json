@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Project1",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.",
+    "image": "https://placehold.it/600x400",
+    "imageAlt": "imageAlt",
+    "type": "standard"
+  },
+  {
+    "name": "Project2",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.",
+    "image": "https://placehold.it/600x400",
+    "imageAlt": "imageAlt",
+    "type": "standard"
+  },
+  {
+    "name": "Project3",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.",
+    "image": "https://placehold.it/600x400",
+    "imageAlt": "imageAlt",
+    "type": "standard"
+  },
+  {
+    "name": "ProjectEmphasis",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.",
+    "image": "https://placehold.it/600x400",
+    "imageAlt": "imageAlt",
+    "type": "emphasis"
+  }
+]

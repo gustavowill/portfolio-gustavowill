@@ -32,11 +32,13 @@ const links = [
 
 const HeaderBar = styled.div`
   width: 100%;
+  height: 6vh;
   border-top: green solid 2px;
   background-color: lightgreen;
 `;
 
 HeaderBar.Wrapper = styled.div`
+  height: 100%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;

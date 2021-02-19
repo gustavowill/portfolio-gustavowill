@@ -77,7 +77,9 @@ export default function Project() {
       <Text tag="h2" variant="projectTitle">Meus Projetos</Text>
       <Grid>
         <Grid.Row>
-          <Grid.Column>
+          <Grid.Column
+            value={12}
+          >
             <ProjectsWrapper.CardEmphasis>
               <ProjectsWrapper.CardImage src="https://placehold.it/600x400" />
               <div>
@@ -98,7 +100,7 @@ export default function Project() {
             if (project.type === 'emphasis') return undefined;
             return (
               <Grid.Column
-                value={4}
+                value={{ xs: 12, md: 4 }}
                 key={project.name}
               >
                 <ProjectsWrapper.Card>

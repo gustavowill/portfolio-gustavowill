@@ -7,7 +7,7 @@ function applyColumnValue() {
     if (value === undefined) return undefined;
     if (typeof value === 'number') {
       return css`
-        flex-basis: ${((100 * value) / 12).toFixed(4)}%;
+        flex: 0 0 ${((100 * value) / 12).toFixed(4)}%;
       `;
     }
     if (typeof value === 'object') {
@@ -16,9 +16,10 @@ function applyColumnValue() {
         const keysArray = Object.keys(value);
         keysArray.forEach((key) => {
           baseObject[key] = css`
-            flex-basis: ${((100 * value) / 12).toFixed(4)}%;
+            flex: 0 0 ${((100 * value[key]) / 12).toFixed(4)}%;
           `;
         });
+        return breakpointsMedia(baseObject);
       };
     }
     return undefined;
@@ -26,22 +27,23 @@ function applyColumnValue() {
 }
 
 function applyColumnOffset() {
-  return ({ value }) => {
-    if (value === undefined) return undefined;
-    if (typeof value === 'number') {
+  return ({ offset }) => {
+    if (offset === undefined) return undefined;
+    if (typeof offset === 'number') {
       return css`
-        flex-basis: ${((100 * value) / 12).toFixed(4)}%;
+        margin-left: ${((100 * offset) / 12).toFixed(4)}%;
       `;
     }
-    if (typeof value === 'object') {
+    if (typeof offset === 'object') {
       return () => {
         const baseObject = {};
-        const keysArray = Object.keys(value);
+        const keysArray = Object.keys(offset);
         keysArray.forEach((key) => {
           baseObject[key] = css`
-            flex-basis: ${((100 * value) / 12).toFixed(4)}%;
+            margin-left: ${((100 * offset) / 12).toFixed(4)}%;
           `;
         });
+        return breakpointsMedia(baseObject);
       };
     }
     return undefined;
@@ -75,8 +77,8 @@ const Grid = styled.div`
 `;
 
 Grid.Row = styled.div`
+  flex-wrap: wrap;
   display: flex;
-  flex-wrap: nowrap;
   ${propToStyle('margin')}
   margin-left: -16px;
   margin-right: -16px;
@@ -87,8 +89,8 @@ Grid.Column = styled.div`
   padding-right: 16px;
   flex-basis: 0;
   flex-grow: 1;
-  ${applyColumnValue()}
   ${applyColumnOffset()}
+  ${applyColumnValue()}
 `;
 
 export default Grid;

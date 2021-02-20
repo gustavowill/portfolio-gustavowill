@@ -1,20 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
-import propToStyle from '../../../theme/utils/propToStyle';
 import Text from '../../foundation/Text';
-
-const BannerWrapper = styled.section`
-  ${propToStyle('display')}
-  ${propToStyle('flexDirection')}
-  ${propToStyle('justifyContent')}
-  ${propToStyle('flex')}
-  ${propToStyle('flexWrap')}
-  ${propToStyle('backgroundImage')}
-  ${propToStyle('backgroundPosition')}
-  ${propToStyle('backgroundSize')}
-  ${propToStyle('backgroundColor')}
-  ${propToStyle('background')}
-`;
+import BannerWrapper from './styles';
 
 export default function Banner() {
   return (

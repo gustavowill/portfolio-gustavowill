@@ -1,7 +1,7 @@
 import React from 'react';
 import Text from '../../foundation/Text';
 import Grid from '../../foundation/layout/Grid';
-import ProjectsWrapper from './ProjectWrapper';
+import ProjectsWrapper from './styles';
 import projects from '../../../../public/projects/projects.json';
 
 export default function Project() {

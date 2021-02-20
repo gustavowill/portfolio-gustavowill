@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import breakpointsMedia from '../../../../theme/utils/breakpointsMedia';
+import breakpointsMedia from '../../../theme/utils/breakpointsMedia';
 
 const cardEmphasisImageBreakpointsStyles = {
   xs: {

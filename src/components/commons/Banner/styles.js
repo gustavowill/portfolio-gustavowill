@@ -8,10 +8,16 @@ const BannerWrapper = styled.section`
   ${propToStyle('flex')}
   ${propToStyle('flexWrap')}
   ${propToStyle('backgroundImage')}
-  ${propToStyle('backgroundPosition')}
-  ${propToStyle('backgroundSize')}
-  ${propToStyle('backgroundColor')}
   ${propToStyle('background')}
+  div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  svg {
+    vertical-align: top;
+    margin: 0 1em;
+  }
 `;
 
 export default BannerWrapper;

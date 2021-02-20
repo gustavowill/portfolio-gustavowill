@@ -33,13 +33,14 @@ HeaderBar.Wrapper = styled.div`
 
 HeaderBar.Nav = styled.nav`
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  flex-basis: 40%;
+  flex-basis: 90%;
+  padding-right: 5%;
   a {
     color: green;
     text-decoration: none;
-    margin: 0 5%;
+    margin-left: 5%;
     :hover, :focus {
       color: #CCFFCC;
     }

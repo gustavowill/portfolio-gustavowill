@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import propToStyle from '../../../theme/utils/propToStyle';
 import Text from '../../foundation/Text';
 
-const BannerBackground = styled.section`
+const BannerWrapper = styled.section`
   ${propToStyle('display')}
   ${propToStyle('flexDirection')}
   ${propToStyle('justifyContent')}
@@ -13,11 +13,12 @@ const BannerBackground = styled.section`
   ${propToStyle('backgroundPosition')}
   ${propToStyle('backgroundSize')}
   ${propToStyle('backgroundColor')}
+  ${propToStyle('background')}
 `;
 
 export default function Banner() {
   return (
-    <BannerBackground
+    <BannerWrapper
       display="flex"
       flexDirection="column"
       justifyContent="center"
@@ -26,7 +27,7 @@ export default function Banner() {
       backgroundImage=""
       backgroundPosition="center"
       backgroundSize="cover"
-      backgroundColor="#BBB"
+      background="linear-gradient(30deg, #333 30%, transparent)"
     >
       <Text
         tag="h1"
@@ -42,6 +43,6 @@ export default function Banner() {
       >
         Portfólio
       </Text>
-    </BannerBackground>
+    </BannerWrapper>
   );
 }

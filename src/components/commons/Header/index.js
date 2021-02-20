@@ -34,7 +34,7 @@ const HeaderBar = styled.div`
   width: 100%;
   height: 6vh;
   border-top: green solid 2px;
-  background: linear-gradient(90deg, green 15px, #333333 15px);
+  background-color: #333
 `;
 
 HeaderBar.Wrapper = styled.div`

@@ -5,7 +5,7 @@ const FooterWrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightgreen;
+  background: linear-gradient(90deg, green 15px, #333333 15px);
   border-bottom: green solid 0.4vh;
 `;
 

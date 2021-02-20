@@ -21,7 +21,7 @@ const headerBreakpoints = {
 
 const links = [
   {
-    text: 'Sobre mim',
+    text: 'Sobre',
     url: '/about',
   },
   {
@@ -34,7 +34,7 @@ const HeaderBar = styled.div`
   width: 100%;
   height: 6vh;
   border-top: green solid 2px;
-  background-color: lightgreen;
+  background: linear-gradient(90deg, green 15px, #333333 15px);
 `;
 
 HeaderBar.Wrapper = styled.div`

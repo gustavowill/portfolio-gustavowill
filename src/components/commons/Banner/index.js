@@ -12,6 +12,7 @@ const BannerBackground = styled.section`
   ${propToStyle('backgroundImage')}
   ${propToStyle('backgroundPosition')}
   ${propToStyle('backgroundSize')}
+  ${propToStyle('backgroundColor')}
 `;
 
 export default function Banner() {
@@ -22,9 +23,10 @@ export default function Banner() {
       justifyContent="center"
       flex="0 0 94vh"
       flexWrap="nowrap"
-      backgroundImage="url(https://placehold.it/400x400)"
+      backgroundImage=""
       backgroundPosition="center"
       backgroundSize="cover"
+      backgroundColor="#BBB"
     >
       <Text
         tag="h1"

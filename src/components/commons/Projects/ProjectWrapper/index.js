@@ -26,7 +26,8 @@ const cardHoverEffect = {
 };
 
 const ProjectsWrapper = styled.section`
-text-align: center;
+  text-align: center;
+  background: linear-gradient(90deg, green 15px, #BBB 15px);
 `;
 
 ProjectsWrapper.Card = styled.div`

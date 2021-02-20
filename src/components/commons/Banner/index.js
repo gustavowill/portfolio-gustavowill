@@ -5,14 +5,7 @@ import BannerWrapper from './styles';
 
 export default function Banner() {
   return (
-    <BannerWrapper
-      display="flex"
-      flexDirection="column"
-      justifyContent="center"
-      flex="0 0 94vh"
-      flexWrap="nowrap"
-      background="linear-gradient(10deg, #222 5%, transparent 35%), linear-gradient(180deg, #222 0%, transparent 75%)"
-    >
+    <BannerWrapper>
       <BannerTitle />
       <Text
         tag="p"

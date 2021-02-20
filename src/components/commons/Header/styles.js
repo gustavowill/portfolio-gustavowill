@@ -18,11 +18,12 @@ const headerBreakpoints = {
 
 const HeaderBar = styled.div`
   width: 100%;
-  height: 6vh;
+  height: 8vh;
   background-color: #222
 `;
 
 HeaderBar.Wrapper = styled.div`
+  padding-top: 2vh;
   height: 100%;
   display: flex;
   justify-content: space-between;

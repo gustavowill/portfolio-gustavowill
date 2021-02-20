@@ -5,6 +5,10 @@ import Text from '../../foundation/Text';
 
 const links = [
   {
+    text: 'Projetos',
+    url: '/projects',
+  },
+  {
     text: 'Sobre',
     url: '/about',
   },

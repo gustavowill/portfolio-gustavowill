@@ -1,14 +1,12 @@
 import styled from 'styled-components';
-import propToStyle from '../../../theme/utils/propToStyle';
 
 const BannerWrapper = styled.section`
-  ${propToStyle('display')}
-  ${propToStyle('flexDirection')}
-  ${propToStyle('justifyContent')}
-  ${propToStyle('flex')}
-  ${propToStyle('flexWrap')}
-  ${propToStyle('backgroundImage')}
-  ${propToStyle('background')}
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 0 0 92vh;
+      flex-wrap: nowrap;
+      background: linear-gradient(10deg, #222 5%, transparent 35%), linear-gradient(180deg, #222 0%, transparent 75%);
   div {
     display: flex;
     justify-content: center;

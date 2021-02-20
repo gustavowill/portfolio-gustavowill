@@ -4,7 +4,7 @@ const FooterWrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #333;
+  background-color: #222;
   border-bottom: green solid 0.4vh;
 `;
 

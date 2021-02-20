@@ -19,8 +19,7 @@ const headerBreakpoints = {
 const HeaderBar = styled.div`
   width: 100%;
   height: 6vh;
-  border-top: green solid 2px;
-  background-color: #333
+  background-color: #222
 `;
 
 HeaderBar.Wrapper = styled.div`

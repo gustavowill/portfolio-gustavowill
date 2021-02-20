@@ -13,7 +13,7 @@ export default function Banner() {
       backgroundImage=""
       backgroundPosition="center"
       backgroundSize="cover"
-      background="linear-gradient(30deg, #333 30%, transparent)"
+      background="linear-gradient(10deg, #222 5%, transparent 35%), linear-gradient(180deg, #222 0%, transparent 75%)"
     >
       <Text
         tag="h1"

@@ -21,7 +21,7 @@ const HeaderBar = styled.div`
   background-color: ${theme.colors.secondary};
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   padding: 2vh 0;
 `;
 

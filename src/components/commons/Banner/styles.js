@@ -4,7 +4,7 @@ import theme from '../../../theme';
 const BannerWrapper = styled.section`
       position: absolute;
       top: 0vh;
-      width: 100vw;
+      width: 100%;
       height: 100vh;
       display: flex;
       flex-direction: column;

@@ -5,6 +5,7 @@ import Header from '../src/components/commons/Header';
 import Projects from '../src/components/commons/Projects';
 import Footer from '../src/components/commons/Footer';
 import theme from '../src/theme/index';
+import About from '../src/components/commons/About';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Banner />
       <Header />
       <Projects />
+      <About />
       <Footer />
     </Box>
   );

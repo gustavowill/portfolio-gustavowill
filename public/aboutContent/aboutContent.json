@@ -1,0 +1,13 @@
+{
+  "image": "https://placehold.it/400x400",
+  "ptBrText": {
+    "title": "Sobre Mim",
+    "paragraph1": "Meu nome é Gustavo Willemann. Iniciei meus estudo de programação em Janeiro de 2021, na Alura.",
+    "paragraph2": "Atualmente, estou com foco em desenvolvimento Front-End."
+  },
+  "enUsText": {
+    "title": "About Me",
+    "paragraph1": "My name is Gustavo Willemann. In january 2021 I began my studies in software development, on Alura.",
+    "paragraph2": "My current focus is learning Front-End development."
+  }
+}

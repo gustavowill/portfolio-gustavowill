@@ -7,6 +7,7 @@ const Box = styled.div`
   ${propToStyle('justifyContent')}
   ${propToStyle('flex')}
   ${propToStyle('flexWrap')}
+  ${propToStyle('backgroundColor')}
 `;
 
 export default Box;

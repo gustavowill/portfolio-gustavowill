@@ -18,14 +18,13 @@ const headerBreakpoints = {
 };
 
 const HeaderBar = styled.div`
-  width: 100%;
-  height: 8vh;
-  background-color: ${theme.colors.secondary}
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding-top: 2vh;
 `;
 
 HeaderBar.Wrapper = styled.div`
-  padding-top: 2vh;
-  height: 100%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;

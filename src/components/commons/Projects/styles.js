@@ -28,7 +28,7 @@ const cardHoverEffect = {
 };
 
 const ProjectsWrapper = styled.section`
-  padding: 8vh 0;
+  padding-top: 8vh;
   text-align: center;
   background-color: ${theme.colors.tertiary};
 `;

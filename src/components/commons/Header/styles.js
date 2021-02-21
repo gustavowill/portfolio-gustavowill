@@ -18,10 +18,11 @@ const headerBreakpoints = {
 };
 
 const HeaderBar = styled.div`
+  background-color: ${theme.colors.secondary};
   position: fixed;
   top: 0;
   width: 100vw;
-  padding-top: 2vh;
+  padding: 2vh 0;
 `;
 
 HeaderBar.Wrapper = styled.div`

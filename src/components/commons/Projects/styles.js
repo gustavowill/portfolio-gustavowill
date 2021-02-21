@@ -28,7 +28,10 @@ const cardHoverEffect = {
 };
 
 const ProjectsWrapper = styled.section`
-  min-height: 225vh;
+  ${breakpointsMedia({
+    xs: { minHeight: '300vh' },
+    md: { minHeight: '200vh' },
+  })}
 `;
 
 ProjectsWrapper.Container = styled.div`

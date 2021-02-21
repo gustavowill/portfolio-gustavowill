@@ -37,15 +37,11 @@ const cardHoverEffect = {
 };
 
 const ProjectsWrapper = styled.section`
-  ${breakpointsMedia({
-    xs: { minHeight: '300vh' },
-    md: { minHeight: '200vh' },
-  })}
+
 `;
 
 ProjectsWrapper.Container = styled.div`
-  position: sticky;
-  top: 8vh;
+
   padding-top: 0.83em;
   text-align: center;
   h2 {

@@ -6,6 +6,7 @@ import Projects from '../src/components/commons/Projects';
 import Footer from '../src/components/commons/Footer';
 import theme from '../src/theme/index';
 import About from '../src/components/commons/About';
+import BackLayer from '../src/components/foundation/layout/BackLayer';
 
 export default function Home() {
   return (
@@ -19,9 +20,13 @@ export default function Home() {
     >
       <Banner />
       <Header />
-      <Projects />
-      <About />
-      <Footer />
+      <BackLayer>
+        <BackLayer.Container>
+          <Projects />
+          <About />
+          <Footer />
+        </BackLayer.Container>
+      </BackLayer>
     </Box>
   );
 }

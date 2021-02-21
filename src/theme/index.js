@@ -1,9 +1,8 @@
 import typographyVariants from './TypographyVariants';
+import colors from './colors';
 
 const theme = {
-  colors: {
-    primary: '#0000FF',
-  },
+  colors,
   typographyVariants,
   fontFamily: '\'IBM Plex Sans\', sans-serif',
 };

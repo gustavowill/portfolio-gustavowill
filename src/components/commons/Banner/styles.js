@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import theme from '../../../theme';
 
 const BannerWrapper = styled.section`
       display: flex;
@@ -6,7 +7,7 @@ const BannerWrapper = styled.section`
       justify-content: center;
       flex: 0 0 92vh;
       flex-wrap: nowrap;
-      background: linear-gradient(10deg, #222 5%, transparent 35%), linear-gradient(180deg, #222 0%, transparent 75%);
+      background: linear-gradient(10deg, ${theme.colors.secondary} 5%, transparent 35%), linear-gradient(180deg, #222 0%, transparent 75%);
   div {
     display: flex;
     justify-content: center;

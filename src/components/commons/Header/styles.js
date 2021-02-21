@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import theme from '../../../theme';
 import breakpointsMedia from '../../../theme/utils/breakpointsMedia';
 
 const headerBreakpoints = {
@@ -19,7 +20,7 @@ const headerBreakpoints = {
 const HeaderBar = styled.div`
   width: 100%;
   height: 8vh;
-  background-color: #222
+  background-color: ${theme.colors.secondary}
 `;
 
 HeaderBar.Wrapper = styled.div`
@@ -38,11 +39,11 @@ HeaderBar.Nav = styled.nav`
   flex-basis: 90%;
   padding-right: 5%;
   a {
-    color: green;
+    color: ${theme.colors.primary};
     text-decoration: none;
     margin-left: 5%;
     :hover, :focus {
-      color: #CCFFCC;
+      color: ${theme.colors.linkHover};
     }
   }
 `;

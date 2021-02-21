@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import theme from '../../../theme';
 import breakpointsMedia from '../../../theme/utils/breakpointsMedia';
 
 const cardEmphasisImageBreakpointsStyles = {
@@ -21,19 +22,20 @@ const cardEmphasisTextDivBreakpointsStyles = {
 };
 
 const cardHoverEffect = {
-  boxShadow: '5px 5px green',
+  // eslint-disable-next-line quotes
+  boxShadow: `5px 5px ${theme.colors.primary}`,
   borderStyle: 'solid',
 };
 
 const ProjectsWrapper = styled.section`
   text-align: center;
-  background-color: #BBB;
+  background-color: ${theme.colors.tertiary};
 `;
 
 ProjectsWrapper.Card = styled.div`
-margin-bottom: 32px;
+  margin-bottom: 32px;
   padding: 1%;
-  border: 2px green dashed;
+  border: 2px ${theme.colors.primary} dashed;
   border-right-style: solid;
   border-bottom-style: solid;
   transition: 500ms;
@@ -48,12 +50,12 @@ margin-bottom: 32px;
 ProjectsWrapper.CardEmphasis = styled.div`
   margin-bottom: 32px;
   padding: 1%;
-  border: green solid 2px;
+  border: 2px ${theme.colors.primary} solid;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   transition: 500ms;
-  border: 2px green dashed;
+  border: 2px ${theme.colors.primary} dashed;
   border-right-style: solid;
   border-bottom-style: solid;
   img {

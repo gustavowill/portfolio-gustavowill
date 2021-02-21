@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import theme from '../../../theme';
 
 const FooterWrapper = styled.section`
+  vertical-align: bottom;
   display: flex;
   justify-content: center;
   align-items: center;

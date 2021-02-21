@@ -5,7 +5,8 @@ import theme from '../../../theme';
 const AboutWrapper = styled.section`
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   padding: 32px 16px;
   color: ${theme.colors.primary};
   ${breakpointsMedia({
@@ -25,15 +26,23 @@ const AboutWrapper = styled.section`
 `;
 
 AboutWrapper.LeftSide = styled.div`
-  flex: 0 0 50%;
+  ${breakpointsMedia({
+    xs: { flex: '0 0 100%', padding: '0 16px' },
+    md: 'flex: 0 0 50%',
+  })}
 `;
 
 AboutWrapper.RightSide = styled.div`
-  flex: 0 0 50%;
+  ${breakpointsMedia({
+    xs: { flex: '0 0 100%', padding: '0 16px' },
+    md: 'flex: 0 0 50%',
+  })}
 `;
 
 AboutWrapper.Image = styled.img`
-
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 `;
 
 export default AboutWrapper;

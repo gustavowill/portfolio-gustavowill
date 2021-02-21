@@ -14,13 +14,10 @@ export default function About() {
     >
       <AboutWrapper>
         <AboutWrapper.LeftSide>
-          <AboutWrapper.Image src={aboutContent.image} alt="Foto do Gustavo Willemann" />
-        </AboutWrapper.LeftSide>
-        <AboutWrapper.RightSide>
           <Text
             tag="h2"
             textAlign="left"
-            variant="projectTitle"
+            variant="cardTitle"
           >
             {aboutContent.ptBrText.title}
           </Text>
@@ -38,6 +35,9 @@ export default function About() {
           >
             {aboutContent.ptBrText.paragraph2}
           </Text>
+        </AboutWrapper.LeftSide>
+        <AboutWrapper.RightSide>
+          <AboutWrapper.Image src={aboutContent.image} alt="Foto do Gustavo Willemann" />
         </AboutWrapper.RightSide>
       </AboutWrapper>
     </Box>

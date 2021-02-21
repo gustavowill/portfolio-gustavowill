@@ -48,6 +48,10 @@ HeaderBar.Nav = styled.nav`
     color: ${theme.colors.primary};
     text-decoration: none;
     margin-left: 5%;
+    ${breakpointsMedia({
+      xs: theme.typographyVariants.navLinkTextSx,
+      md: theme.typographyVariants.navLinkText,
+    })}
     :hover, :focus {
       color: ${theme.colors.linkHover};
     }

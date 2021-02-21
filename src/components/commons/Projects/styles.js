@@ -40,6 +40,12 @@ ProjectsWrapper.Container = styled.div`
   padding-top: 0.83em;
   text-align: center;
   background-color: ${theme.colors.tertiary};
+  h2 {
+    ${breakpointsMedia({
+      xs: theme.typographyVariants.projectTitleSx,
+      md: theme.typographyVariants.projectTitle,
+    })}
+  }
 `;
 
 ProjectsWrapper.Card = styled.div`
@@ -49,6 +55,12 @@ ProjectsWrapper.Card = styled.div`
   border-right-style: solid;
   border-bottom-style: solid;
   transition: 500ms;
+  h3 {
+    ${breakpointsMedia({
+      xs: theme.typographyVariants.cardTitleSx,
+      md: theme.typographyVariants.cardTitle,
+    })}
+  }
   img {
     width: 100%;
   }
@@ -68,6 +80,12 @@ ProjectsWrapper.CardEmphasis = styled.div`
   border: 2px ${theme.colors.primary} dashed;
   border-right-style: solid;
   border-bottom-style: solid;
+  h3 {
+    ${breakpointsMedia({
+      xs: theme.typographyVariants.cardTitleSx,
+      md: theme.typographyVariants.cardTitle,
+    })}
+  }
   img {
     ${breakpointsMedia(cardEmphasisImageBreakpointsStyles)}
   }

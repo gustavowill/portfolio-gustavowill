@@ -25,7 +25,7 @@ const cardSharedStyle = {
   marginBottom: '32px',
   padding: '1%',
   transition: '500ms',
-  border: '2px ${theme.colors.primary} dashed',
+  border: `2px ${theme.colors.primary} dashed`,
   borderRightStyle: 'solid',
   borderBottomStyle: 'solid',
 };

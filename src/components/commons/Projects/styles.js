@@ -28,7 +28,13 @@ const cardHoverEffect = {
 };
 
 const ProjectsWrapper = styled.section`
-  padding-top: 8vh;
+  min-height: 225vh;
+`;
+
+ProjectsWrapper.Container = styled.div`
+  position: sticky;
+  top: 8vh;
+  padding-top: 0.83em;
   text-align: center;
   background-color: ${theme.colors.tertiary};
 `;

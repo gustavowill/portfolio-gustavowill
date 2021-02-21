@@ -41,8 +41,8 @@ HeaderBar.Nav = styled.nav`
   flex-basis: 90%;
   padding: 0 5%;
   ${breakpointsMedia({
-    xs: { flexBasis: '100%' },
-    md: { flexBasis: '90%', justifyContent: 'flex-end' },
+    xs: { flexBasis: '100%', paddingBottom: '1vh' },
+    md: { flexBasis: '90%', justifyContent: 'flex-end', paddingBottom: '0vh'  },
   })}
   a {
     color: ${theme.colors.primary};

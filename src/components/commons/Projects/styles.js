@@ -21,6 +21,15 @@ const cardEmphasisTextDivBreakpointsStyles = {
   },
 };
 
+const cardSharedStyle = {
+  marginBottom: '32px',
+  padding: '1%',
+  transition: '500ms',
+  border: '2px ${theme.colors.primary} dashed',
+  borderRightStyle: 'solid',
+  borderBottomStyle: 'solid',
+};
+
 const cardHoverEffect = {
   // eslint-disable-next-line quotes
   boxShadow: `5px 5px ${theme.colors.primary}`,
@@ -39,7 +48,6 @@ ProjectsWrapper.Container = styled.div`
   top: 8vh;
   padding-top: 0.83em;
   text-align: center;
-  background-color: ${theme.colors.tertiary};
   h2 {
     ${breakpointsMedia({
       xs: theme.typographyVariants.projectTitleSx,
@@ -49,12 +57,7 @@ ProjectsWrapper.Container = styled.div`
 `;
 
 ProjectsWrapper.Card = styled.div`
-  margin-bottom: 32px;
-  padding: 1%;
-  border: 2px ${theme.colors.primary} dashed;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  transition: 500ms;
+  ${cardSharedStyle}
   h3 {
     ${breakpointsMedia({
       xs: theme.typographyVariants.cardTitleSx,
@@ -70,16 +73,10 @@ ProjectsWrapper.Card = styled.div`
  `;
 
 ProjectsWrapper.CardEmphasis = styled.div`
-  margin-bottom: 32px;
-  padding: 1%;
-  border: 2px ${theme.colors.primary} solid;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  transition: 500ms;
-  border: 2px ${theme.colors.primary} dashed;
-  border-right-style: solid;
-  border-bottom-style: solid;
+  ${cardSharedStyle}
   h3 {
     ${breakpointsMedia({
       xs: theme.typographyVariants.cardTitleSx,

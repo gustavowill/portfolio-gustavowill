@@ -22,7 +22,6 @@ const HeaderBar = styled.div`
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 2vh 0;
 `;
 
 HeaderBar.Wrapper = styled.div`

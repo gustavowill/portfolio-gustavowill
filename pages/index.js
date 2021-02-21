@@ -16,9 +16,9 @@ export default function Home() {
       flex="1"
       flexWrap="nowrap"
     >
-      <Projects />
-      <Header />
       <Banner />
+      <Header />
+      <Projects />
       <Footer />
     </Box>
   );

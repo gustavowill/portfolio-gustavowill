@@ -12,6 +12,8 @@ const BannerWrapper = styled.section`
       flex-wrap: nowrap;
       backdrop-filter: blur(15px);
       background: linear-gradient(10deg, ${theme.colors.secondary} 5%, transparent 40%), linear-gradient(180deg, #222 0%, transparent 80%);
+      box-shadow: 0 10px 20px 5px black;
+      z-index: 1;
   div {
     display: flex;
     justify-content: center;

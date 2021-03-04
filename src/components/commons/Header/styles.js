@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 import styled, { css } from 'styled-components';
 import theme from '../../../theme';
 import breakpointsMedia from '../../../theme/utils/breakpointsMedia';
@@ -42,7 +43,7 @@ HeaderBar.Nav = styled.nav`
   padding: 0 5%;
   ${breakpointsMedia({
     xs: { flexBasis: '100%', paddingBottom: '1vh' },
-    md: { flexBasis: '90%', justifyContent: 'flex-end', paddingBottom: '0vh'  },
+    md: { flexBasis: '90%', justifyContent: 'flex-end', paddingBottom: '0vh' },
   })}
   a {
     color: ${theme.colors.primary};

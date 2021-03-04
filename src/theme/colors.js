@@ -3,6 +3,7 @@ const colors = {
   secondary: '#222222',
   tertiary: '#BBBBBB',
   linkHover: '#25A737',
+  buttonHover: '#DDDDDD',
 };
 
 export default colors;

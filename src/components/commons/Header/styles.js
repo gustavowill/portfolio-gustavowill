@@ -45,18 +45,6 @@ HeaderBar.Nav = styled.nav`
     xs: { flexBasis: '100%', paddingBottom: '1vh' },
     md: { flexBasis: '90%', justifyContent: 'flex-end', paddingBottom: '0vh' },
   })}
-  a {
-    color: ${theme.colors.primary};
-    text-decoration: none;
-    margin-left: 5%;
-    ${breakpointsMedia({
-      xs: theme.typographyVariants.navLinkTextSx,
-      md: theme.typographyVariants.navLinkText,
-    })}
-    :hover, :focus {
-      color: ${theme.colors.linkHover};
-    }
-  }
 `;
 
 export default HeaderBar;

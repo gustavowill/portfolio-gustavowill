@@ -3,15 +3,13 @@ import FormInput from '../../forms/FormInput';
 import Button from '../Button';
 import ContactFormWrapper from './styles';
 
-const formInfoValues = {
-  name: '',
-  email: '',
-  message: '',
-};
-
 export default function ContactForm() {
   const [isValidForm, setIsValidForm] = useState(false);
-  const [formInfo, setFormInfo] = useState(formInfoValues);
+  const [formInfo, setFormInfo] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
 
   function validateForm() {
     if (formInfo.name.length > 0 && formInfo.email.length > 0) setIsValidForm(true);
@@ -20,13 +18,16 @@ export default function ContactForm() {
 
   function handleChange(event) {
     const fieldId = event.target.getAttribute('id');
-    formInfoValues[fieldId] = event.target.value;
-    setFormInfo(formInfoValues);
+    setFormInfo({
+      ...formInfo,
+      [fieldId]: event.target.value,
+    });
     validateForm();
   }
 
   function handleSubmit(event) {
     event.preventDefault();
+    // eslint-disable-next-line no-console
     console.log(formInfo);
   }
 
@@ -37,6 +38,7 @@ export default function ContactForm() {
         id="name"
         placeholder="Nome"
         onChange={handleChange}
+        value={formInfo.name}
       >
         Seu Nome
       </FormInput>
@@ -44,6 +46,7 @@ export default function ContactForm() {
         id="email"
         placeholder="Email"
         onChange={handleChange}
+        value={formInfo.email}
       >
         Email
       </FormInput>
@@ -52,6 +55,7 @@ export default function ContactForm() {
         id="message"
         placeholder="Mesagem"
         onChange={handleChange}
+        value={formInfo.message}
       >
         Mensagem
       </FormInput>

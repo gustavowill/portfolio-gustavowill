@@ -9,6 +9,7 @@ export default function FormInput({
   children,
   onChange,
   placeholder,
+  value,
 }) {
   return (
     <InputWrapper
@@ -21,6 +22,7 @@ export default function FormInput({
         id={id}
         onChange={onChange}
         placeholder={placeholder}
+        value={value}
       />
     </InputWrapper>
   );
@@ -33,6 +35,7 @@ FormInput.propTypes = {
   children: PropTypes.node.isRequired,
   onChange: PropTypes.func.isRequired,
   placeholder: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
 };
 
 FormInput.defaultProps = {

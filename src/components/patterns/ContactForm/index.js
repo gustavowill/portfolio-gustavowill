@@ -63,6 +63,7 @@ export default function ContactForm() {
 
   useEffect(() => {
     if (formStatus !== 'DONE') validateForm();
+    else setFormStatus(formStates.DEFAULT);
   }, [formInfo]);
 
   return (

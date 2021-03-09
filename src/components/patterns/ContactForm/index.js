@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { Lottie } from '@crello/react-lottie';
+import animationSuccess from './animations/submitSuccess.json';
+import animationError from './animations/submitError.json';
 import FormInput from '../../forms/FormInput';
 import Button from '../../commons/Button';
 import ContactFormWrapper from './styles';
@@ -41,7 +44,7 @@ export default function ContactForm() {
       },
       body: JSON.stringify(formInfo),
     }).then((apiResponse) => {
-      if (apiResponse.ok) return apiResponse.json();
+      if (!apiResponse.ok) return apiResponse.json();
       throw new Error('Falha no envio da menssagem');
     }).then(() => {
       setFormStatus(formStates.DONE);
@@ -100,8 +103,29 @@ export default function ContactForm() {
         isDisabled={!isValidForm}
       >
         {formStatus === 'DEFAULT' && 'Enviar'}
-        {formStatus === 'DONE' && 'Mensagem enviada ✓'}
-        {formStatus === 'ERROR' && 'Falha no envio da mensagem ✗'}
+        {formStatus === 'DONE' && (
+          <>
+            <span>Mensagem enviada</span>
+            <Lottie
+              width="2.5rem"
+              height="2.5rem"
+              config={{ animationData: animationSuccess }}
+              // https://lottiefiles.com/5449-success-tick
+            />
+          </>
+        )}
+        {formStatus === 'ERROR' && (
+          <>
+            <span>Falha no envio da mensagem</span>
+            <Lottie
+              width="2.3rem"
+              height="2.3rem"
+              speed="1.6"
+              config={{ animationData: animationError }}
+              // https://lottiefiles.com/5707-error
+            />
+          </>
+        )}
       </Button>
     </ContactFormWrapper>
   );

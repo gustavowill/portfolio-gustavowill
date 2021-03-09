@@ -25,12 +25,13 @@ Button.propTypes = {
   id: PropTypes.string,
   children: PropTypes.node.isRequired,
   variant: PropTypes.string,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
   isDisabled: PropTypes.bool,
 };
 
 Button.defaultProps = {
   id: undefined,
+  onClick: undefined,
   variant: 'default',
   isDisabled: false,
 };

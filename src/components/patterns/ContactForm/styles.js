@@ -33,6 +33,10 @@ const ContactFormWrapper = styled.form`
 
   button {
     width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
   }
 
   #buttonFormStatusDONE {

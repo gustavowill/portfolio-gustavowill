@@ -32,7 +32,31 @@ const ContactFormWrapper = styled.form`
   }
 
   button {
-    width: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  #buttonFormStatusDONE {
+    background: lightgreen;
+    border: 3px solid green;
+    :hover {
+      cursor: initial;
+      box-shadow: none;
+      pointer-events: none;
+    }
+  }
+
+  #buttonFormStatusERROR {
+    background: pink;
+    border: 3px solid red;
+    :hover {
+      cursor: initial;
+      box-shadow: none;
+      pointer-events: none;
+    }
   }
 `;
 

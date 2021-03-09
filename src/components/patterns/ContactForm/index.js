@@ -44,7 +44,7 @@ export default function ContactForm() {
       },
       body: JSON.stringify(formInfo),
     }).then((apiResponse) => {
-      if (!apiResponse.ok) return apiResponse.json();
+      if (apiResponse.ok) return apiResponse.json();
       throw new Error('Falha no envio da menssagem');
     }).then(() => {
       setFormStatus(formStates.DONE);

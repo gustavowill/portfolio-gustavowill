@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import HeaderBar from './styles';
-import Logo from '../Logo';
+import Logo from '../../commons/Logo';
 import Text from '../../foundation/Text';
-import Button from '../Button';
+import Button from '../../commons/Button';
 
 const pageSections = [
   {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import FormInput from '../../forms/FormInput';
-import Button from '../Button';
+import Button from '../../commons/Button';
 import ContactFormWrapper from './styles';
 
 export default function ContactForm() {

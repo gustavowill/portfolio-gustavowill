@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import ModalWrapper, { LockScroll } from './styles';
+import LockScroll from '../LockScroll';
+import ModalWrapper from './styles';
 
 const modalId = 'ModalWrapper';
 

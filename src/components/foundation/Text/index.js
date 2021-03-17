@@ -2,12 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import propToStyle from '../../../theme/utils/propToStyle';
-import theme from '../../../theme';
 
 const TextBase = styled.span`
   ${propToStyle('textAlign')}
   ${propToStyle('display')}
-  ${(props) => theme.typographyVariants[props.variant]};
+  ${({ theme, variant }) => theme.typographyVariants[variant]};
 `;
 
 export default function Text({

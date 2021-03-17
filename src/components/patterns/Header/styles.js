@@ -21,13 +21,13 @@ const headerBreakpoints = {
 
 const HeaderBar = styled.div`
   background-color: ${theme.colors.secondary};
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 1;
 `;
 
-HeaderBar.Wrapper = styled.div`
+HeaderBar.Content = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -45,6 +45,15 @@ HeaderBar.Nav = styled.nav`
     xs: { flexBasis: '100%', paddingBottom: '1vh' },
     md: { flexBasis: '90%', justifyContent: 'flex-end', paddingBottom: '0vh' },
   })}
+  button {
+    cursor: pointer;
+  }
+  span, a {
+    ${breakpointsMedia({
+      xs: theme.typographyVariants.navLinkTextSx,
+      md: theme.typographyVariants.navLinkText,
+    })}
+  }
 `;
 
 export default HeaderBar;

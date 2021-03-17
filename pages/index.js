@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Modal from '../src/components/commons/Modal';
-import BackLayer from '../src/components/foundation/layout/BackLayer';
 import Box from '../src/components/foundation/layout/Box';
 import About from '../src/components/patterns/About';
 import Banner from '../src/components/patterns/Banner';
@@ -41,13 +40,9 @@ export default function Home() {
         isModalOpen={isModalOpen}
         openFormModal={openFormModal}
       />
-      <BackLayer>
-        <BackLayer.Container>
-          <Projects />
-          <About />
-          <Footer />
-        </BackLayer.Container>
-      </BackLayer>
+      <Projects />
+      <About />
+      <Footer />
     </Box>
   );
 }

@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle, css } from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const ModalWrapper = styled.section`
   position: fixed;
@@ -24,12 +24,6 @@ const ModalWrapper = styled.section`
       opacity: 0
     `;
   }}
-`;
-
-export const LockScroll = createGlobalStyle`
-  body {
-    overflow: hidden;
-  }
 `;
 
 export default ModalWrapper;

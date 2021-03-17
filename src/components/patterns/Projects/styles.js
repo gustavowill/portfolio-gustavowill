@@ -38,11 +38,6 @@ const cardHoverEffect = {
 };
 
 const ProjectsWrapper = styled.section`
-
-`;
-
-ProjectsWrapper.Container = styled.div`
-
   padding-top: 0.83em;
   text-align: center;
   h2 {

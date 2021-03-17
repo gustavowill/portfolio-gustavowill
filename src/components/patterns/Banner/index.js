@@ -21,6 +21,7 @@ export default function Banner() {
       >
         Portfólio
       </Text>
+      <BannerWrapper.UpArrow />
     </BannerWrapper>
   );
 }

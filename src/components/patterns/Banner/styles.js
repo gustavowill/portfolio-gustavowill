@@ -5,17 +5,17 @@ const BannerWrapper = styled.section`
     ${({ bannerVisible }) => {
     if (bannerVisible) {
       return css`
-        top: 0vh;
+        top: 0;
       `;
     }
     return css`
-      top: -105vh;
+      top: -105%;
     `;
   }}
 
   position: fixed;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,6 +26,7 @@ const BannerWrapper = styled.section`
   box-shadow: 0 10px 20px 5px black;
   z-index: 2;
   transition: 1000ms;
+  cursor: pointer; 
   div {
     display: flex;
     justify-content: center;
@@ -35,7 +36,17 @@ const BannerWrapper = styled.section`
     vertical-align: top;
     margin: 0 1em;
   }
+`;
 
+BannerWrapper.UpArrow = styled.div`
+  position: fixed;
+  bottom: 5rem;
+  left: 47.5vw;
+  width: 5vw;
+  height: 5vw;
+  border: solid ${getThemeColor('primary')};
+  border-width: 0.5rem 0.5rem 0 0;
+  transform: rotate(-45deg);
 `;
 
 export default BannerWrapper;

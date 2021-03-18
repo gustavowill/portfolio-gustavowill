@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutScreen from '../src/components/screens/AboutScreen';
+import AboutScreen from '../src/screens/AboutScreen';
 
 // eslint-disable-next-line react/prop-types
 export default function AboutPage({ githubRepositorys }) {

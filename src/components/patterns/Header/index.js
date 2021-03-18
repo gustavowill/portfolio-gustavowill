@@ -4,13 +4,16 @@ import HeaderBar from './styles';
 import Logo from '../../commons/Logo';
 import Text from '../../foundation/Text';
 import Button from '../../commons/Button';
+import Link from '../../commons/Link';
 
-const pageSections = [
+const pages = [
   {
     text: 'Projetos',
+    link: '/',
   },
   {
     text: 'Sobre',
+    link: '/about',
   },
   // {
   //   text: 'Contato',
@@ -20,19 +23,22 @@ const pageSections = [
 export default function Header({ openFormModal }) {
   return (
     <HeaderBar>
-      <HeaderBar.Wrapper>
+      <HeaderBar.Content>
         <Logo />
         <HeaderBar.Nav>
-          {pageSections.map((section) => (
+          {pages.map((page) => (
             <Button
-              onClick={() => undefined}
               type="button"
-              key={section.text}
+              key={page.text}
               variant="navBar"
             >
-              <Text variant="navLinkText">
-                {section.text}
-              </Text>
+              <Link
+                tag="a"
+                variant="navLinkText"
+                href={page.link}
+              >
+                {page.text}
+              </Link>
             </Button>
           ))}
           <Button
@@ -45,7 +51,7 @@ export default function Header({ openFormModal }) {
             </Text>
           </Button>
         </HeaderBar.Nav>
-      </HeaderBar.Wrapper>
+      </HeaderBar.Content>
     </HeaderBar>
   );
 }

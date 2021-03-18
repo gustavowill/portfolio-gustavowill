@@ -1,8 +1,8 @@
 /* eslint-disable indent */
 import styled, { css } from 'styled-components';
-import theme from '../../../theme';
-import breakpointsMedia from '../../../theme/utils/breakpointsMedia';
-import getThemeColor from '../../../theme/utils/getThemeColor';
+import theme from '../../theme';
+import breakpointsMedia from '../../theme/utils/breakpointsMedia';
+import getThemeColor from '../../theme/utils/getThemeColor';
 
 const AboutWrapper = styled.section`
   margin: 0 auto;

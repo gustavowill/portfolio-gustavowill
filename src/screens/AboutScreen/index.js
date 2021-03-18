@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import aboutTexts from '../../../../public/aboutContent/aboutTexts.json';
-import Text from '../../foundation/Text';
+import Text from '../../components/foundation/Text';
+import aboutTexts from '../../../public/aboutContent/aboutTexts.json';
 import AboutWrapper from './styles';
 
 export default function About({ githubRepositorys }) {

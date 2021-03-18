@@ -26,6 +26,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <title>Portfólio - Gustavo Willemann</title>
+        <link rel="shortcut icon" href="favicon.png" type="imagem/png" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
       </Head>

@@ -14,37 +14,37 @@ const typographyVariants = {
     fontWeight: '400',
     lineHeight: '33.6px',
   },
-  projectTitle: {
+  sectionTitle: {
     fontSize: '60px',
     fontWeight: '400',
     lineHeight: '72px',
   },
-  cardTitle: {
+  componentTitle: {
     fontSize: '32px',
     fontWeight: '700',
     lineHeight: '38.4px',
   },
-  cardText: {
+  regularText: {
     fontSize: '18px',
     fontWeight: '400',
     lineHeight: '21.6px',
   },
-  cardTextSx: {
+  regularTextXs: {
     fontSize: '16px',
     fontWeight: '400',
     lineHeight: '20px',
   },
-  navLinkTextSx: {
+  navLinkTextXs: {
     fontSize: '18px',
     fontWeight: '400',
     lineHeight: '21.6px',
   },
-  projectTitleSx: {
+  sectionTitleXs: {
     fontSize: '36px',
     fontWeight: '400',
     lineHeight: '43.2px',
   },
-  cardTitleSx: {
+  componentTitleXs: {
     fontSize: '20px',
     fontWeight: '700',
     lineHeight: '28.8px',

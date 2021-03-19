@@ -7,7 +7,7 @@ export default function SEO({ headTitle }) {
   const title = headTitle ? `${headTitle} | ${baseTitle}` : baseTitle;
 
   const description = 'Porfólio de Gustavo Willemann';
-  const image = '/gustavowillemann.png';
+  const image = 'https://www.gustavowillemann.com.br/gustavowillemann.png';
   const urlBase = 'gustavowillemann.com.br';
 
   return (

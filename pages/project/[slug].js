@@ -2,17 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ProjectScreen from '../../src/screens/ProjectScreen';
 import db from '../../db.json';
+import SEO from '../../src/components/commons/SEO';
 
 export default function ProjectPage({
   image, title, description, link,
 }) {
   return (
-    <ProjectScreen
-      image={image}
-      title={title}
-      description={description}
-      link={link}
-    />
+    <>
+      <SEO
+        headTitle={title}
+      />
+      <ProjectScreen
+        image={image}
+        title={title}
+        description={description}
+        link={link}
+      />
+    </>
   );
 }
 

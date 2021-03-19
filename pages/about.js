@@ -1,12 +1,18 @@
 import React from 'react';
+import SEO from '../src/components/commons/SEO';
 import AboutScreen from '../src/screens/AboutScreen';
 
 // eslint-disable-next-line react/prop-types
 export default function AboutPage({ githubRepositorys }) {
   return (
-    <AboutScreen
-      githubRepositorys={githubRepositorys}
-    />
+    <>
+      <SEO
+        headTitle="Sobre"
+      />
+      <AboutScreen
+        githubRepositorys={githubRepositorys}
+      />
+    </>
   );
 }
 

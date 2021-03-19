@@ -1,7 +1,7 @@
 /* eslint-disable indent */
 import styled, { css } from 'styled-components';
-import theme from '../../../theme';
 import breakpointsMedia from '../../../theme/utils/breakpointsMedia';
+import getThemeColor from '../../../theme/utils/getThemeColor';
 
 const headerBreakpoints = {
   sm: css`
@@ -20,7 +20,7 @@ const headerBreakpoints = {
 };
 
 const HeaderBar = styled.div`
-  background-color: ${theme.colors.secondary};
+  background-color: ${getThemeColor('secondary')};
   position: sticky;
   top: 0;
   width: 100%;
@@ -47,12 +47,6 @@ HeaderBar.Nav = styled.nav`
   })}
   button {
     cursor: pointer;
-  }
-  span, a {
-    ${breakpointsMedia({
-      xs: theme.typographyVariants.navLinkTextSx,
-      md: theme.typographyVariants.navLinkText,
-    })}
   }
 `;
 

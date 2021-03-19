@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import getTypographyVariant from '../../../theme/utils/getTypographyVariant';
 
 const StyledLink = styled.a`
   color: inherit;
@@ -6,7 +7,7 @@ const StyledLink = styled.a`
   font-weight: inherit;
   line-height: inherit;
   text-decoration: none;
-  ${({ theme, variant }) => theme.typographyVariants[variant]}
+  ${getTypographyVariant()}
 `;
 
 export default StyledLink;

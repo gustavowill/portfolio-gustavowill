@@ -1,17 +1,17 @@
 import styled from 'styled-components';
-import theme from '../../../theme';
+import getThemeColor from '../../../theme/utils/getThemeColor';
 
 const FooterWrapper = styled.section`
   vertical-align: bottom;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${theme.colors.secondary};
-  border-bottom: ${theme.colors.primary} solid 0.4vh;
+  background-color: ${getThemeColor('secondary')};
+  border-bottom: 0.4vh solid ${getThemeColor('primary')};
 `;
 
 FooterWrapper.LinksBar = styled.div`
-  background-color: ${theme.colors.primary};
+  background-color: ${getThemeColor('primary')};
   display: flex;
   justify-content: space-between;
   height: 50px;

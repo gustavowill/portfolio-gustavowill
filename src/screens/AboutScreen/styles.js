@@ -1,8 +1,7 @@
 /* eslint-disable indent */
 import styled, { css } from 'styled-components';
-import theme from '../../../theme';
-import breakpointsMedia from '../../../theme/utils/breakpointsMedia';
-import getThemeColor from '../../../theme/utils/getThemeColor';
+import breakpointsMedia from '../../theme/utils/breakpointsMedia';
+import getThemeColor from '../../theme/utils/getThemeColor';
 
 const AboutWrapper = styled.section`
   margin: 0 auto;
@@ -21,24 +20,6 @@ const AboutWrapper = styled.section`
       max-width: 1222px;
     `,
   })}
-  p, a {
-    ${breakpointsMedia({
-      xs: theme.typographyVariants.cardTextSx,
-      md: theme.typographyVariants.cardText,
-    })}
-  }
-  h2 {
-    ${breakpointsMedia({
-      xs: theme.typographyVariants.projectTitleSx,
-      md: theme.typographyVariants.projectTitle,
-    })}
-  }
-  h3 {
-    ${breakpointsMedia({
-      xs: theme.typographyVariants.cardTitleSx,
-      md: theme.typographyVariants.cardTitle,
-    })}
-  }
   p {
     max-width: 80%;
     margin-right: auto;

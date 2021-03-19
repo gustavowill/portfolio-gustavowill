@@ -5,6 +5,7 @@ import animationError from './animations/submitError.json';
 import FormInput from '../../forms/FormInput';
 import Button from '../../commons/Button';
 import ContactFormWrapper from './styles';
+import Text from '../../foundation/Text';
 
 const formStates = {
   DEFAULT: 'DEFAULT',
@@ -70,7 +71,12 @@ export default function ContactForm() {
     <ContactFormWrapper
       onSubmit={handleSubmit}
     >
-      <h3>Envie sua mensagem</h3>
+      <Text
+        tag="h3"
+        variant="componentTitle"
+      >
+        Envie sua mensagem
+      </Text>
       <FormInput
         id="name"
         placeholder="Nome"
@@ -103,10 +109,16 @@ export default function ContactForm() {
         type="submit"
         isDisabled={!isValidForm}
       >
-        {formStatus === 'DEFAULT' && 'Enviar'}
+        <Text
+          tag="span"
+          variant="regularText"
+        >
+          {formStatus === 'DEFAULT' && 'Enviar'}
+          {formStatus === 'DONE' && 'Mensagem enviada'}
+          {formStatus === 'ERROR' && 'Falha no envio da mensagem'}
+        </Text>
         {formStatus === 'DONE' && (
           <>
-            <span>Mensagem enviada</span>
             <Lottie
               width="2.5rem"
               height="2.5rem"
@@ -117,7 +129,6 @@ export default function ContactForm() {
         )}
         {formStatus === 'ERROR' && (
           <>
-            <span>Falha no envio da mensagem</span>
             <Lottie
               width="2.3rem"
               height="2.3rem"

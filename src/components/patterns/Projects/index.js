@@ -7,7 +7,12 @@ import projects from '../../../../public/projects/projects.json';
 export default function Project() {
   return (
     <ProjectsWrapper>
-      <Text tag="h2" variant="projectTitle">Meus Projetos</Text>
+      <Text
+        tag="h2"
+        variant={{ xs: 'sectionTitleXs', md: 'sectionTitle' }}
+      >
+        Meus Projetos
+      </Text>
       <Grid>
         <Grid.Row>
           <Grid.Column
@@ -18,14 +23,14 @@ export default function Project() {
               <div>
                 <Text
                   tag="h3"
-                  variant="cardTitle"
+                  variant={{ xs: 'componentTitleXs', md: 'componentTitle' }}
                   textAlign={{ xs: 'center', md: 'left' }}
                 >
                   {projects[3].name}
                 </Text>
                 <Text
                   tag="p"
-                  variant="cardText"
+                  variant={{ xs: 'regularTextXs', md: 'regularText' }}
                   textAlign={{ xs: 'center', md: 'left' }}
                   display={{ xs: 'none', md: 'block' }}
                 >
@@ -45,7 +50,7 @@ export default function Project() {
               >
                 <ProjectsWrapper.Card>
                   <img src={project.image} alt={project.imageAlt} />
-                  <Text tag="h3" variant="cardTitle">
+                  <Text tag="h3" variant={{ xs: 'componentTitleXs', md: 'componentTitle' }}>
                     {project.name}
                   </Text>
                 </ProjectsWrapper.Card>

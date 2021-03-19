@@ -1,20 +1,15 @@
 import styled from 'styled-components';
-import theme from '../../../theme';
+import getThemeColor from '../../../theme/utils/getThemeColor';
 
 const ContactFormWrapper = styled.form`
   padding: 0rem 2rem 1rem;
-  background: ${theme.colors.tertiary};
-  border: 2px solid ${theme.colors.primary};
+  background: ${getThemeColor('tertiary')};
+  border: 2px solid ${getThemeColor('primary')};
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  ${theme.typographyVariants.cardText};
   
-  h3 {
-    ${theme.typographyVariants.cardTitle};
-  }
-
   label {
     width: 100%;
     display: flex;

@@ -10,7 +10,7 @@ export default function About({ githubRepositorys }) {
       <Text
         tag="h2"
         textAlign="center"
-        variant="projectTitle"
+        variant={{ xs: 'sectionTitleXs', md: 'sectionTitle' }}
       >
         {aboutTexts.ptBrText.title}
       </Text>
@@ -18,14 +18,14 @@ export default function About({ githubRepositorys }) {
       <Text
         tag="p"
         textAlign="left"
-        variant="cardText"
+        variant={{ xs: 'regularTextXs', md: 'regularText' }}
       >
         {aboutTexts.ptBrText.paragraph1}
       </Text>
       <Text
         tag="h2"
         textAlign="center"
-        variant="projectTitle"
+        variant={{ xs: 'sectionTitleXs', md: 'sectionTitle' }}
       >
         Meus Repositórios
       </Text>
@@ -34,14 +34,14 @@ export default function About({ githubRepositorys }) {
           <Text
             tag="h3"
             textAlign="left"
-            variant="cardTitle"
+            variant={{ xs: 'componentTitleXs', md: 'componentTitle' }}
           >
             {repository.name}
           </Text>
           <Text
             tag="a"
             textAlign="center"
-            variant="cardText"
+            variant={{ xs: 'regularTextXs', md: 'regularText' }}
             href={repository.url}
           >
             {repository.url}

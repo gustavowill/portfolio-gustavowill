@@ -20,7 +20,7 @@ export default function ProjectScreen({
         <Text
           tag="h2"
           textAlign="center"
-          variant="projectTitle"
+          variant={{ xs: 'sectionTitleXs', md: 'sectionTitle' }}
         >
           {title}
         </Text>
@@ -32,18 +32,18 @@ export default function ProjectScreen({
         />
         <Text
           tag="p"
-          variant="cardText"
+          variant={{ xs: 'regularTextXs', md: 'regularText' }}
         >
           {description}
         </Text>
         <Text
           tag="h3"
-          variant="cardTitleSx"
+          variant={{ xs: 'componentTitleXs', md: 'componentTitle' }}
         >
           Visite o projeto
         </Text>
         <Link
-          variant="cardText"
+          variant={{ xs: 'regularTextXs', md: 'regularText' }}
           href="http://www.gustavowillemann.com"
         >
           {link}

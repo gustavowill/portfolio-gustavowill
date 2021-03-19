@@ -34,7 +34,7 @@ export default function Header({ openFormModal }) {
             >
               <Link
                 tag="a"
-                variant="navLinkText"
+                variant={{ xs: 'navLinkTextXs', sm: 'navLinkText' }}
                 href={page.link}
               >
                 {page.text}
@@ -46,7 +46,7 @@ export default function Header({ openFormModal }) {
             type="button"
             variant="navBar"
           >
-            <Text variant="navLinkText">
+            <Text variant={{ xs: 'navLinkTextXs', sm: 'navLinkText' }}>
               Contato
             </Text>
           </Button>

@@ -11,12 +11,13 @@ export default function Page404() {
       alignItems="center"
     >
       <Text
+        tag="h1"
         variant="title"
       >
         404
       </Text>
       <Text
-        variant="cardText"
+        variant="sectionTitleXs"
       >
         Página não encontrada
       </Text>

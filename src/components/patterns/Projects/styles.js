@@ -40,22 +40,10 @@ const cardHoverEffect = {
 const ProjectsWrapper = styled.section`
   padding-top: 0.83em;
   text-align: center;
-  h2 {
-    ${breakpointsMedia({
-      xs: theme.typographyVariants.projectTitleSx,
-      md: theme.typographyVariants.projectTitle,
-    })}
-  }
 `;
 
 ProjectsWrapper.Card = styled.div`
   ${cardSharedStyle}
-  h3 {
-    ${breakpointsMedia({
-      xs: theme.typographyVariants.cardTitleSx,
-      md: theme.typographyVariants.cardTitle,
-    })}
-  }
   img {
     width: 100%;
   }
@@ -69,12 +57,6 @@ ProjectsWrapper.CardEmphasis = styled.div`
   display: flex;
   flex-wrap: wrap;
   ${cardSharedStyle}
-  h3 {
-    ${breakpointsMedia({
-      xs: theme.typographyVariants.cardTitleSx,
-      md: theme.typographyVariants.cardTitle,
-    })}
-  }
   img {
     ${breakpointsMedia(cardEmphasisImageBreakpointsStyles)}
   }

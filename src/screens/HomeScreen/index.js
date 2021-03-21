@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import Text from '../../foundation/Text';
-import Grid from '../../foundation/layout/Grid';
+import Text from '../../components/foundation/Text';
+import Grid from '../../components/foundation/layout/Grid';
 import ProjectsWrapper from './styles';
-import { projects } from '../../../../db.json';
-import Link from '../../commons/Link';
+import { projects } from '../../../db.json';
+import Link from '../../components/commons/Link';
 
 export default function Project() {
   return (
@@ -32,9 +32,20 @@ export default function Project() {
                       width={500}
                       height={500}
                     />
-                    <Text tag="h3" variant={{ xs: 'componentTitleXs', md: 'componentTitle' }}>
+                    <Text
+                      tag="h3"
+                      variant={{ xs: 'componentTitleXs', md: 'componentTitle' }}
+                    >
                       {project.title}
                     </Text>
+                    <ProjectsWrapper.CardDescription>
+                      <Text
+                        tag="p"
+                        variant={{ xs: 'regularTextXs', md: 'regularText' }}
+                      >
+                        {project.shortDescription}
+                      </Text>
+                    </ProjectsWrapper.CardDescription>
                   </ProjectsWrapper.Card>
                 </Link>
               </Grid.Column>

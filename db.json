@@ -2,39 +2,66 @@
 {
   "projects": [
     {
+      "image": "/favicon.png",
+      "title": "Project1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.",
+      "link": "http://pudim.com.br/"
+    },
+    {
+      "image": "/favicon.png",
+      "title": "Project2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.",
+      "link": "http://pudim.com.br/"
+    },
+    {
+      "image": "/favicon.png",
+      "title": "Project3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.",
+      "link": "http://pudim.com.br/"
+    },
+    {
+      "image": "/favicon.png",
+      "title": "Project Emphasis",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.",
+      "link": "http://pudim.com.br/"
+    },
+    {
       "image": "/projects/img/legolas.jpg",
       "title": "Legolas",
       "description": "They're taking the hobbits to Isengard",
+      "shortDescription": "They're taking the hobbits to Isengard",
       "link": "http://pudim.com.br/"
     },
     {
       "image": "/projects/img/allyourbase.jpg",
       "title": "CATS",
       "description": "All Your Base Are Belong To Us",
+      "shortDescription": "All Your Base Are Belong To Us",
       "link": "http://pudim.com.br/"
     },
     {
       "image": "/projects/img/internet.jpg",
       "title": "Internet",
       "description": "Welcome to the internet, I'll be your guide",
+      "shortDescription": "Welcome to the internet, I'll be your guide",
       "link": "http://pudim.com.br/"
     },
     {
       "image": "/projects/img/otaco.jpg",
       "title": "Otaco",
       "description": "Corre que o otaco tá puto",
+      "shortDescription": "Corre que o otaco tá puto",
       "link": "http://pudim.com.br/"
     },
     {
       "image": "/projects/img/tankcat.jpg",
       "title": "Boromir",
       "description": "One does not simply Tankcat into Mordor",
-      "link": "http://pudim.com.br/"
-    },
-    {
-      "image": "/projects/img/tankcat.jpg",
-      "title": "PudimDeLeite",
-      "description": "Quem diabos come pudim com batata?",
+      "shortDescription": "One does not simply Tankcat into Mordor",
       "link": "http://pudim.com.br/"
     }
   ]

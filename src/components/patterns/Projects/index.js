@@ -1,8 +1,10 @@
 import React from 'react';
+import Image from 'next/image';
 import Text from '../../foundation/Text';
 import Grid from '../../foundation/layout/Grid';
 import ProjectsWrapper from './styles';
-import projects from '../../../../public/projects/projects.json';
+import { projects } from '../../../../db.json';
+import Link from '../../commons/Link';
 
 export default function Project() {
   return (
@@ -15,48 +17,29 @@ export default function Project() {
       </Text>
       <Grid>
         <Grid.Row>
-          <Grid.Column
-            value={12}
-          >
-            <ProjectsWrapper.CardEmphasis>
-              <img src={projects[3].image} alt={projects[3].imageAlt} />
-              <div>
-                <Text
-                  tag="h3"
-                  variant={{ xs: 'componentTitleXs', md: 'componentTitle' }}
-                  textAlign={{ xs: 'center', md: 'left' }}
-                >
-                  {projects[3].name}
-                </Text>
-                <Text
-                  tag="p"
-                  variant={{ xs: 'regularTextXs', md: 'regularText' }}
-                  textAlign={{ xs: 'center', md: 'left' }}
-                  display={{ xs: 'none', md: 'block' }}
-                >
-                  {projects[3].text}
-                </Text>
-              </div>
-            </ProjectsWrapper.CardEmphasis>
-          </Grid.Column>
-        </Grid.Row>
-        <Grid.Row>
-          {projects.map((project) => {
-            if (project.type === 'emphasis') return undefined;
-            return (
+          <ProjectsWrapper.List>
+            {projects.map((project) => (
               <Grid.Column
+                as="li"
                 value={{ xs: 12, md: 4 }}
-                key={project.name}
+                key={project.title}
               >
-                <ProjectsWrapper.Card>
-                  <img src={project.image} alt={project.imageAlt} />
-                  <Text tag="h3" variant={{ xs: 'componentTitleXs', md: 'componentTitle' }}>
-                    {project.name}
-                  </Text>
-                </ProjectsWrapper.Card>
+                <Link href={`/projects/${project.title.toLowerCase()}`}>
+                  <ProjectsWrapper.Card>
+                    <Image
+                      src={project.image}
+                      alt="Imagem do projeto"
+                      width={500}
+                      height={500}
+                    />
+                    <Text tag="h3" variant={{ xs: 'componentTitleXs', md: 'componentTitle' }}>
+                      {project.title}
+                    </Text>
+                  </ProjectsWrapper.Card>
+                </Link>
               </Grid.Column>
-            );
-          })}
+            ))}
+          </ProjectsWrapper.List>
         </Grid.Row>
       </Grid>
     </ProjectsWrapper>

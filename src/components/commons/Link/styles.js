@@ -3,11 +3,11 @@ import getTypographyVariant from '../../../theme/utils/getTypographyVariant';
 
 const StyledLink = styled.a`
   color: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
   text-decoration: none;
-  ${getTypographyVariant()}
+  ${({ variant }) => {
+    if (variant !== undefined) return getTypographyVariant();
+    return undefined;
+  }}
 `;
 
 export default StyledLink;

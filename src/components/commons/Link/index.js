@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import NextLink from 'next/link';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -23,5 +24,12 @@ export default function Link({ children, href, variant }) {
 Link.propTypes = {
   children: PropTypes.node.isRequired,
   href: PropTypes.string.isRequired,
-  variant: PropTypes.string.isRequired,
+  variant: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object,
+  ]),
+};
+
+Link.defaultProps = {
+  variant: undefined,
 };

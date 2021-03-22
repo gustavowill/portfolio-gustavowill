@@ -2,39 +2,75 @@
 {
   "projects": [
     {
-      "image": "/projects/img/legolas.jpg",
+      "title": "Project1",
+      "type": "regular",
+      "image": "/favicon.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.",
+      "link": "http://pudim.com.br/"
+    },
+    {
+      "title": "Project2",
+      "type": "regular",
+      "image": "/favicon.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.",
+      "link": "http://pudim.com.br/"
+    },
+    {
+      "title": "Project3",
+      "type": "regular",
+      "image": "/favicon.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus vestibulum. Aenean blandit velit.",
+      "link": "http://pudim.com.br/"
+    },
+    {
+      "title": "Instalura",
+      "type": "emphasis",
+      "image": "/projects/img/instalura.png",
+      "description": "Projeto criado durante o Bootcamp JAM stack da Alura.",
+      "shortDescription": "Projeto criado durante o Bootcamp JAM stack da Alura.",
+      "link": "http://instalura.guswillemann.vercel.app"
+    },
+    {
       "title": "Legolas",
+      "type": "regular",
+      "image": "/projects/img/legolas.jpg",
       "description": "They're taking the hobbits to Isengard",
+      "shortDescription": "They're taking the hobbits to Isengard",
       "link": "http://pudim.com.br/"
     },
     {
-      "image": "/projects/img/allyourbase.jpg",
       "title": "CATS",
+      "type": "regular",
+      "image": "/projects/img/allyourbase.jpg",
       "description": "All Your Base Are Belong To Us",
+      "shortDescription": "All Your Base Are Belong To Us",
       "link": "http://pudim.com.br/"
     },
     {
-      "image": "/projects/img/internet.jpg",
       "title": "Internet",
+      "type": "regular",
+      "image": "/projects/img/internet.jpg",
       "description": "Welcome to the internet, I'll be your guide",
+      "shortDescription": "Welcome to the internet, I'll be your guide",
       "link": "http://pudim.com.br/"
     },
     {
-      "image": "/projects/img/otaco.jpg",
       "title": "Otaco",
+      "type": "regular",
+      "image": "/projects/img/otaco.jpg",
       "description": "Corre que o otaco tá puto",
+      "shortDescription": "Corre que o otaco tá puto",
       "link": "http://pudim.com.br/"
     },
     {
-      "image": "/projects/img/tankcat.jpg",
       "title": "Boromir",
-      "description": "One does not simply Tankcat into Mordor",
-      "link": "http://pudim.com.br/"
-    },
-    {
+      "type": "regular",
       "image": "/projects/img/tankcat.jpg",
-      "title": "PudimDeLeite",
-      "description": "Quem diabos come pudim com batata?",
+      "description": "One does not simply Tankcat into Mordor",
+      "shortDescription": "One does not simply Tankcat into Mordor",
       "link": "http://pudim.com.br/"
     }
   ]

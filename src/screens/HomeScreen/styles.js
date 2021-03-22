@@ -1,5 +1,6 @@
 /* eslint-disable indent */
 import styled from 'styled-components';
+import breakpointsMedia from '../../theme/utils/breakpointsMedia';
 import getThemeColor from '../../theme/utils/getThemeColor';
 
 const ProjectsWrapper = styled.section`
@@ -13,6 +14,38 @@ ProjectsWrapper.List = styled.ul`
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
+  margin: 0;
+`;
+
+ProjectsWrapper.EmphasisCard = styled.div`
+  padding: 1%;
+  width: 100%;
+  margin-bottom: 2rem;
+  border: 2px solid ${getThemeColor('primary')};
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  img {
+    ${breakpointsMedia({
+      xs: {
+        width: '100%',
+      },
+      md: {
+        paddingRight: '15px',
+        width: '50%',
+      },
+    })}
+  }
+  div {
+    ${breakpointsMedia({
+      xs: {
+        width: '100%',
+      },
+      md: {
+        width: '50%',
+      },
+    })}
+  }
 `;
 
 ProjectsWrapper.Card = styled.div`
@@ -45,14 +78,18 @@ ProjectsWrapper.Card = styled.div`
   padding: 2rem;
   
   p {
-    background-color: #bbb;
+    background-color: ${getThemeColor('tertiary')};
     border: 2px solid ${getThemeColor('primary')};
   }
 
   :hover {
-    opacity: 1;
-    background: rgba(0,0,0,0.2);
-    backdrop-filter: blur(15px);
+    ${breakpointsMedia({
+      md: {
+        opacity: '1',
+        background: 'rgba(0,0,0,0.2)',
+        backdropFilter: 'blur(15px)',
+      },
+  })}
   }
  `;
 

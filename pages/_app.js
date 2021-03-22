@@ -9,6 +9,7 @@ import theme from '../src/theme';
 import GlobalStyle from '../src/theme/GlobalStyle';
 import Modal from '../src/components/commons/Modal';
 import ContactForm from '../src/components/patterns/ContactForm';
+import Banner from '../src/components/patterns/Banner';
 
 // eslint-disable-next-line react/prop-types
 export default function App({ Component, pageProps }) {
@@ -31,6 +32,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
+        <Banner />
         <Box
           backgroundColor={theme.colors.tertiary}
           display="flex"

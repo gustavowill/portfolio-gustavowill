@@ -29,7 +29,7 @@ export default function ContactForm() {
   }
 
   function handleChange(event) {
-    const fieldId = event.target.getAttribute('id');
+    const fieldId = event.target.getAttribute('name');
     setFormInfo({
       ...formInfo,
       [fieldId]: event.target.value,
@@ -78,7 +78,7 @@ export default function ContactForm() {
         Envie sua mensagem
       </Text>
       <FormInput
-        id="name"
+        name="name"
         placeholder="Nome"
         onChange={handleChange}
         value={formInfo.name}
@@ -86,7 +86,7 @@ export default function ContactForm() {
         Seu Nome
       </FormInput>
       <FormInput
-        id="email"
+        name="email"
         type="email"
         placeholder="Email"
         onChange={handleChange}
@@ -96,7 +96,7 @@ export default function ContactForm() {
       </FormInput>
       <FormInput
         tag="textarea"
-        id="message"
+        name="message"
         placeholder="Mesagem"
         onChange={handleChange}
         value={formInfo.message}

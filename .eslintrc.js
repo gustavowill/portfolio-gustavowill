@@ -4,6 +4,7 @@ module.exports = {
     es2021: true,
   },
   extends: [
+    'plugin:cypress/recommended',
     'plugin:react/recommended',
     'airbnb',
   ],
@@ -16,6 +17,7 @@ module.exports = {
   },
   plugins: [
     'react',
+    'cypress',
   ],
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],

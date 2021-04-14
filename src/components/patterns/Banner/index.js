@@ -11,6 +11,7 @@ export default function Banner() {
     <BannerWrapper
       bannerVisible={isBannerVisible}
       onClick={() => setIsBannerVisible(!isBannerVisible)}
+      name="introBanner"
     >
       {isBannerVisible && <LockScroll />}
       <BannerTitle />

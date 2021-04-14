@@ -25,7 +25,7 @@ const BannerWrapper = styled.section`
               linear-gradient(180deg, ${getThemeColor('secondary')} 0%, transparent 80%);
   box-shadow: 0 10px 20px 5px black;
   z-index: 2;
-  transition: 1000ms;
+  transition: 400ms;
   cursor: pointer; 
   div {
     display: flex;

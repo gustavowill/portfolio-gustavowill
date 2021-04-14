@@ -45,6 +45,7 @@ export default function Header({ openFormModal }) {
             onClick={openFormModal}
             type="button"
             variant="navBar"
+            name="contact"
           >
             <Text variant={{ xs: 'navLinkTextXs', sm: 'navLinkText' }}>
               Contato

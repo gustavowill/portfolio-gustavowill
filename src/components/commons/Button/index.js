@@ -8,6 +8,8 @@ export default function Button({
   variant,
   onClick,
   isDisabled,
+  name,
+  type,
 }) {
   return (
     <ButtonWrapper
@@ -15,6 +17,8 @@ export default function Button({
       onClick={onClick}
       variant={variant}
       disabled={isDisabled}
+      name={name}
+      type={type}
     >
       {children}
     </ButtonWrapper>
@@ -27,6 +31,8 @@ Button.propTypes = {
   variant: PropTypes.string,
   onClick: PropTypes.func,
   isDisabled: PropTypes.bool,
+  name: PropTypes.string,
+  type: PropTypes.string,
 };
 
 Button.defaultProps = {
@@ -34,4 +40,6 @@ Button.defaultProps = {
   onClick: undefined,
   variant: 'default',
   isDisabled: false,
+  name: undefined,
+  type: undefined,
 };

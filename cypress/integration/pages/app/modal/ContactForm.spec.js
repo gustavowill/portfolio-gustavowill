@@ -23,10 +23,10 @@ function AccessContactFrom(url) {
 describe('modal/ContactsForm', () => {
   describe('accessed from multiple pages', () => {
     it('is accessed from the home page', () => {
-      AccessContactFrom('http://localhost:3000/');
+      AccessContactFrom('/');
     });
     it('is accessed from the about page', () => {
-      AccessContactFrom('http://localhost:3000/about/');
+      AccessContactFrom('/about/');
     });
   });
 
@@ -34,7 +34,7 @@ describe('modal/ContactsForm', () => {
     it('is a submission success', () => {
       cy.intercept('https://contact-form-api-jamstack.herokuapp.com/message').as('submitHttp');
 
-      cy.visit('http://localhost:3000');
+      cy.visit('/');
       cy.get(banner).click();
       cy.get(contactBtn).click();
 
@@ -49,7 +49,7 @@ describe('modal/ContactsForm', () => {
         req.reply({});
       }).as('submitHttp');
 
-      cy.visit('http://localhost:3000');
+      cy.visit('/');
       cy.get(banner).click();
       cy.get(contactBtn).click();
 
